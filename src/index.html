@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+    <title>گروه رویال</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="h-14 w-fullbg-white border-gray-300"></nav>
+
+    <!-- navbar end -->
+    <main>
+      <section>
+        <ul>
+          <li>hi</li>
+          <li>h2</li>
+          <li>h2</li>
+          <li>h2</li>
+          <li>h2</li>
+          <li>h2</li>
+          <li>h2</li>
+ 
+        </ul>
+      </section>
+    </main>
+    <!-- navbar mobile -->
+    <div x-data="{ showBar: flase }">
+      <div :class="{ 'bg-white shadow translate-y-full' : !showBar }" class="shadow-mobile-menu transition bg-wight duration-500 fixed flex h-20 translate-y-full bottom-0 z-50 items-center w-full">
+        <ul class="flex items-center justify-between w-full h-full bg-white px-4" @scroll.window="showBar = (window.pageYOffset > 20) ? true : false">
+          <li>خانه</li>
+          <li>پنل کاربری</li>
+          <li>قراردادها</li>
+          <li>تماس با ما</li>
+        </ul>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

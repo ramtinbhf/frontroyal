@@ -1,0 +1,31 @@
+@tailwind base;
+
+@layer base {
+  @font-face {
+    font-family: danawt;
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/woff2/DanaFaNum-Bold.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/DanaFaNum-Bold.woff") format("woff");
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+
+  @font-face {
+    font-family: danawt;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/woff2/DanaFaNum-Regular.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/DanaFaNum-Regular.woff") format("woff");
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  }
+}
+@tailwind components;
+
+@layer components {
+  .border-style {
+    @apply border border-gray-300;
+  }
+}
+@tailwind utilities;
+
+body {
+  @apply font-danawt overflow-hidden;
+}
